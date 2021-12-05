@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            my family book
+        </title>
+        <link rel="" href="style.css">
+    </head>
+    <center>
+    <body>
+        <h1>my family book</h1>
+        <img src="" style="width: 200px;height:350px;"id="familybook">
+        <h4 id = "familymembername">
+        </h4>
+        <button id="nextbutton" onclick="updateA()"next>
+        </button>
+        <script>
+            var images = [
+            "",
+            "",
+            "",  
+"", 
+"", 
+            ]
+            var names = [
+            "",     
+            "", 
+            "", 
+            "", 
+            "", 
+            ]
+            var i=0
+            function update() {
+                i++;
+                var familymemberarray = 4
+                if(i>familymemberarray)
+                (
+                    i = 0;
+                )
+                var updateimages = images[i];
+                var updatenames = names[i];
+                document.getElementById(familybook).src = updateimages;
+                document.getElementById(familymembername).innerHTML = updatenames;
+
+            }
+        </script>
+
+    </body>
+    </center>
+</html>
